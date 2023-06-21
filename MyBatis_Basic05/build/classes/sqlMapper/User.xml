@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Emp">
+	<!-- 원칙 :  parameterType="String" 
+	     parameter 1개 생략 일반적으로 ...
+	     Mapper = 쿼리문 저장하는 것
+	 -->
+	 <!-- 여기서 getname은 쿼리문을 가지고 있는 함수의 이름이라 보면 된다. -->
+	 <!-- resultType : 정상적으로 실행되면 kr.or.bit.dto.User에 해당되는 객체를 자동 생성 -->
+	<select id="getone" parameterType="String" resultType="kr.or.bit.dto.User">
+		<!-- ename=#{ename} 외워야 함 -->
+		select empno, ename from emp where ename=#{ename}
+	</select>
+	
+	<!-- return multi row >> User 객체 여러개 >> List<User> (x) -->
+	<!-- 밖에서 받을 준비만 하면 알아서 ArrayList를 던져줌 -->
+	<select id="getUsers" resultType="kr.or.bit.dto.User">
+		select empno , ename from emp
+	</select>
+	
+</mapper>
+
+
+
