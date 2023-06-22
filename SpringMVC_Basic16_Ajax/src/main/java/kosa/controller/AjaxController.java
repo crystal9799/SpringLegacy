@@ -93,7 +93,7 @@ public class AjaxController {
 		list.add(employee2);
 		
 		map.addAttribute("data", list);
-		
+		//{"data":[{},{}]}
 		return jsonview;
 	}
 	

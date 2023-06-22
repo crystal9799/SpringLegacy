@@ -23,7 +23,14 @@ public class AjaxController {
 		e.setJob("IT");
 		e.setSal(1000);
 
+		Emp e2 = new Emp();
+		e2.setEmpno(9999);
+		e2.setEname("홍길동");
+		e2.setJob("IT");
+		e2.setSal(1000);
+		
 		list.add(e);
+		list.add(e2);
 		
 		return list;
 	}	

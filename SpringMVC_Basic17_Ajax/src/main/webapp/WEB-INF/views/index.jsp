@@ -22,7 +22,7 @@ Table.GridOne Td {
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script type="text/javascript">
      function madeAjaxCall(){
-    	 /*
+    	 
     	 $.ajax({
   			type: "post",
   			url:  "response.kosa",
@@ -39,7 +39,7 @@ Table.GridOne Td {
   				alert('Error while request..'	);
   			}
   		});
-     	*/
+     	
      	
      	
      	/*
@@ -70,7 +70,7 @@ Table.GridOne Td {
        			});
          */
        	
-    	 $.ajax({
+    	 /* $.ajax({
    			type: "post",
    			url:  "response3.kosa",
    			cache: false,				
@@ -82,7 +82,7 @@ Table.GridOne Td {
    			error: function(){						
    				alert('Error while request..'	);
    			}
-   		}); 
+   		});  */
      	
      } 
   
